@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Term Matching Game</h1>
+            <div class="input-area">
+                <textarea id="termsInput" placeholder="Enter terms and definitions in the format:&#10;Term: Definition&#10;Another Term: Another Definition&#10;..."></textarea>
+                <button id="loadTerms">Load Terms</button>
+            </div>
+            <div class="stats">
+                <p>Score: <span id="score">0</span></p>
+                <p>Terms Completed: <span id="completed">0</span>/<span id="total">0</span></p>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="terms-container" id="terms"></div>
+            <div class="definitions-container" id="definitions"></div>
+        </div>
+        <div class="controls">
+            <button id="nextSet">Next Set</button>
+            <button id="reset">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
